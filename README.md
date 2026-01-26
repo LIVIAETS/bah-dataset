@@ -1,4 +1,4 @@
-# [*BAH* Dataset for Ambivalence/Hesitancy Recognition in Videos for Behavioural Change](https://arxiv.org/pdf/2505.19328)
+# [*BAH* Dataset for Ambivalence/Hesitancy Recognition in Videos for Digital Behavioural Change (ICLR2026)](https://arxiv.org/pdf/2505.19328)
 
 
 by
@@ -31,33 +31,36 @@ Eric Granger<sup>1</sup>**
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/sbelharbi/bah-dataset)
 
 ## Abstract
-Recognizing complex emotions linked to ambivalence and hesitancy (A/H) can play
-a critical role in the personalization and effectiveness of digital behaviour
-change interventions. These subtle and conflicting emotions are manifested by
-a discord between multiple modalities, such as facial and vocal expressions,
-and body language. Although experts can be trained to identify A/H, integrating
-them into digital interventions is costly and less effective.
-Automatic learning systems provide a cost-effective alternative that can adapt
-to individual users, and operate  seamlessly within real-time, resource-limited
- environments. However, there are currently no datasets available for the design
- of ML models to recognize A/H.
-This paper introduces a first Behavioural Ambivalence/Hesitancy (*BAH*) dataset
-collected for subject-based multimodal recognition of A/H in videos.  It
-contains videos from 224 subjects captured across 9 provinces in Canada, with
-different age, and ethnicity. Through our web platform, we recruited subjects
-to answer 7 questions, some of which were designed to elicit A/H while recording
- themselves via webcam with microphone. *BAH* amounts to 1,118 videos for a total
- duration of 8.26 hours with 1.5 hours of A/H.  Our behavioural team annotated
- timestamp segments to indicate where A/H occurs, and provide frame- and
- video-level annotations with the A/H cues. Video transcripts and their
- timestamps are also included, along with cropped and aligned faces in each
- frame, and a variety of subject meta-data.
-Additionally, this paper provides preliminary benchmarking results baseline
-models for *BAH* at frame- and video-level recognition with mono- and multi-modal
-setups. It also includes results on models for zero-shot prediction, and for
-personalization using unsupervised domain adaptation. The limited performance
-of baseline models highlights the challenges of recognizing A/H in real-world
-videos.
+Ambivalence and hesitancy (A/H), a closely related construct, is the primary
+reasons why individuals delay, avoid, or abandon health behaviour changes.
+It is a subtle and conflicting emotion that sets a person in a state between
+positive and negative orientations, or between acceptance and refusal to do
+something. It manifests by a discord in affect between multiple modalities or
+within a modality, such as facial and vocal expressions, and body language.
+Although experts can be trained to recognize A/H as done for in-person
+interactions, integrating them into digital health interventions is costly and
+less effective. Automatic A/H recognition is therefore critical for the
+personalization and cost-effectiveness of digital behaviour change interventions.  
+However, no datasets currently exists for the design of machine learning models
+to recognize A/H.
+This paper introduces the Behavioural Ambivalence/Hesitancy (*BAH*) dataset
+collected for multimodal recognition of A/H in videos.  
+It contains 1,427 videos with a total duration of 10.60 hours captured from 300
+participants across Canada answering predefined questions to elicit A/H. It is
+intended to mirror real-world online personalized behaviour change interventions.
+ *BAH* is annotated by three experts to provide timestamps that
+indicate where A/H occurs, and frame- and video-level annotations with A/H cues.
+ Video transcripts, cropped and aligned faces, and participants' meta-data are
+ also provided. Since A and H manifest similarly in practice, we provide a binary
+ annotation indicating the presence or absence of A/H.
+Additionally, this paper includes benchmarking results using  baseline models on
+*BAH* for frame- and video-level recognition, zero-shot prediction, and
+personalization using source-free domain adaptation. The limited performance
+highlights the need for adapted multimodal and spatio-temporal models for A/H
+recognition. Results for specialized methods for fusion are shown to assess the
+presence of conflict between modalities, and for temporal modelling for
+within-modality conflict are essential for better A/H recognition.
+The data, code, and pretrained weights are publicly available.
 
 
 **Code: Pytorch 2.2.2**
@@ -65,14 +68,13 @@ videos.
 
 ## Citation:
 ```
-@article{gonzalez-25-bah,
-  title={{BAH} Dataset for Ambivalence/Hesitancy Recognition in Videos for Behavioural Change},
+@inproceedings{gonzalez-25-bah,
+  title={{BAH} Dataset for Ambivalence/Hesitancy Recognition in Videos for Digital Behavioural Change},
   author={González-González, M. and Belharbi, S. and Zeeshan, M. O. and
     Sharafi, M. and Aslam, M. H and Pedersoli, M. and Koerich, A. L. and
     Bacon, S. L. and Granger, E.},
-  journal={CoRR},
-  volume={abs/2505.19328},
-  year={2025}
+  booktitle={ICLR},
+  year={2026}
 }
 ```
 
@@ -385,12 +387,22 @@ python main.py \
 
 
 ### Conclusion
+This work introduces a new and unique multimodal and subject-based video dataset,
+*BAH*, for A/H recognition in videos.
+*BAH* contains 300 participants across 9 provinces in Canada. Recruited
+participants answer 7 designed questions to elicit A/H while recording
+themselves via webcam and microphone via our web-platform. The dataset amounts
+to 1,427 videos for a total duration of 10.60 hours with 1.79 hours of A/H. It
+was annotated by our behavioural team at video- and frame-level.
 
-This work introduces a new and unique multimodal and subject-based video dataset, *BAH*, for A/H recognition in videos.
-*BAH* contains 224 participants across 9 provinces in Canada. Recruited participants answer 7 designed questions to elicit A/H while recording themselves via webcam and microphone via our web-platform. The dataset amounts to 1,118 videos for a total duration of 8.26 hours with 1.5 hours of A/H. It was annotated by our behavioural team at video- and frame-level.
+Our initial benchmarking yielded limited performance highlighting the difficulty
+of A/H recognition. Our results showed also that leveraging context,
+multimodality, and adapted feature fusion is a first good direction to design
+robust models. Our dataset and code are made public.
 
-Our initial benchmarking yielded limited performance highlighting the difficulty of A/H recognition. Our results showed also that leveraging context, multimodality, and adapted feature fusion is a first good direction to design robust models. Our dataset and code are made public.
-
+The following appendix contains related work, more detailed and relevant
+statistics about the datasets and its diversity, dataset limitations,
+implementation details, and additional results.
 
 ### Acknowledgments
 This work was supported in part by the Fonds de recherche du Québec – Santé, the Natural Sciences and Engineering Research Council of Canada, Canada Foundation for Innovation, and the Digital Research Alliance of Canada. We thank interns that participated in the dataset annotation: Jessica Almeida (Concordia University, Université du Québec à Montréal), and Laura Lucia Ortiz (MBMC).
