@@ -93,15 +93,26 @@ The data, code, and pretrained weights are publicly available.
 
 ## <a name='download-bah'> *BAH* dataset: Download </a>
 
-To download BAH dataset, please fill in the following form which includes signing and uploading the End-User License Agreement (EULA). You will receive a link to download *BAH* dataset.
+To download BAH dataset, please fill in the following form which includes signing and uploading the End-User License Agreement (EULA). You will receive a link to download *BAH* dataset. Please read the following instructions before requesting the dataset. It will help you avoid errors/delays.
 
 
 ```diff
 - PLEASE FILL IN THE DATASET REQUEST FORM CAREFULLY TO AVOID ERRORS/DELAYS.
 - PLEASE FOLLOW THE NEXT INSTRUCTIONS.
 ```
+* Who can request *BAH* dataset? **only** full-time faculty position (for example: Assistant Professor, Associate Professor, or Professor) at a university, higher education institution, or equivalent organisation can request BAH dataset (fill in the form and sign the EULA). The applicant cannot be a student (UG/PG/Ph.D./Postdoc).
 
-* *BAH* DATASET REQUEST FORM: [https://www.crhscm.ca/redcap/surveys/?s=LDMDDJR3AT9P37JY](https://www.crhscm.ca/redcap/surveys/?s=LDMDDJR3AT9P37JY)
+<p align="center"><img src="doc/who-can-request.png" alt="Who can request BAH?" width="90%"></p>
+
+* All form fields with "* must provide value" are mandatory.
+
+* "Email" field: please enter your permanent faculty email address.
+
+<p align="center"><img src="doc/form-email.png" alt="Email" width="90%"></p>
+
+* Please list the names of everyone who will have access to the dataset, such as your students.
+
+<p align="center"><img src="doc/form-team-members.png" alt="Who will have access to the dataset?" width="90%"></p>
 
 
 * For the certification: `I certify that neither myself nor any of my research team are directly associated with an institution or organisation on Canada's Named Research Organisations List (see https://science.gc.ca/site/science/en/safeguarding-your-research/guidelines-and-tools-implement-research-security/sensitive-technology-research-and-affiliations-concern/named-research-organizations).`
@@ -154,6 +165,8 @@ Search affiliations/institutions/organisations in the provided link [https://sci
 
 * If you have questions while filling in the request form, please contact us.
 
+
+* *BAH* DATASET REQUEST FORM: [https://www.crhscm.ca/redcap/surveys/?s=LDMDDJR3AT9P37JY](https://www.crhscm.ca/redcap/surveys/?s=LDMDDJR3AT9P37JY)
 
 
 
