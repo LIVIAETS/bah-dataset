@@ -20,7 +20,7 @@ Eric Granger<sup>1</sup>**
 <br/>
 <sup>4</sup> Montreal Behavioural Medicine Centre, CIUSSS Nord-de-l’Ile-de-Montréal, Canada
 
-
+**Contact**: <img src="doc/livia-datasets-electro-contact.png" alt="livia-datasets">
 
 <p align="center"><img src="doc/demo.png" alt="outline" width="90%"></p>
 <!-- <br/> -->
