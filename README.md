@@ -343,7 +343,7 @@ python main.py \
 
 
 
-<p align="center"><img src="doc/nutrition-label.jpg" alt="Nutrition label" width="90%"></p>
+<!-- <p align="center"><img src="doc/nutrition-label.jpg" alt="Nutrition label" width="90%"></p> -->
 <!-- <br/> -->
 
 <p align="center"><img src="doc/variability-1.png" alt="Dataset vairability" width="90%"></p>
